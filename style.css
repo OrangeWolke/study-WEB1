@@ -16,7 +16,7 @@ h1 {
     padding: 20px;
 }
 
-/* id값을 태그 앞에 붙임으로써 id값안에  있는 태그만을 지칭할 수 있다 */
+/* id값을 태그 앞에 붙임으로써 id값안에 있는 태그만을 지칭할 수 있다 */
 #grid ol {
     padding-left:33px;
     border-right: 1px solid gray;
