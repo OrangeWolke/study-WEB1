@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: "Times New Roman",Times, serif;
+    font-size: 120%;
+}
+a {
+    color:black;
+    text-decoration: none;
+}
+h1 {
+    font-size: 300%;
+    text-align: center;
+    text-shadow: 5px -5px #ffecfd;
+        margin: 0;
+    border-bottom: 1px solid gray;
+    padding: 20px;
+}
+
+/* id값을 태그 앞에 붙임으로써 id값안에  있는 태그만을 지칭할 수 있다 */
+#grid ol {
+    padding-left:33px;
+    border-right: 1px solid gray;
+    margin:0;
+    padding-top: 20px;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+#article{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media(max-width:500px){
+     #grid{
+        display:block;
+    }
+
+    #grid ol {
+        border-right:none;
+    }
+
+    h1 {
+        border-bottom:none;
+    }
+}
