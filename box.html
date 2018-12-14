@@ -3,8 +3,36 @@
     <head>
         <meta charset="utf-8">
         <title></title>
+        <style>
+            /*
+            block level element
+            */
+            h1, img{
+                border: 5px solid red;
+                padding: 20px;
+                margin: 20px;
+                text-align: center;
+                display: block;
+                width: 150px;
+            }
+
+            #thinner {
+                border: 3px solid yellow;
+            }
+            /*
+            inline element
+            */
+            
+            .larger {
+                border: 10px dotted green;
+                width: 500px;
+            }
+        </style>
     </head>
     <body>
-        <h1>CSS</h1>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+        <h1>This is a box.</h1>
+        <h1 id="thinner">This is another box.</h1>
+
+        <img src="https://www.washington.edu/accesscomputing/webd2/student/unit3/images/boxmodel.gif" class="larger">
     </body>
 </html>

@@ -11,46 +11,60 @@
         'element'로 전체적인 디자인 틀을 다진 후, '.class'나 '#id'로 예외적인 일을 후처리하는 흐름으로!
     -->
     <style>
-        #active {
-            color:red;
-        }
-        .saw {
-            color:gray;
+        body {
+            margin: 0;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 120%;
         }
         a {
             color:black;
             text-decoration: none;
         }
         h1 {
-            font-size: 500%;
+            font-size: 300%;
             text-align: center;
-            text-shadow: 5px -5px #d9bdf4;
+            text-shadow: 5px -5px #ffecfd;
+            margin: 0;
+            border-bottom: 1px solid gray;
+            padding: 20px;
+        }
+
+        /* id값을 태그 앞에 붙임으로써 id값 안에 있는 태그만을 지칭할 수 있다 */
+        #grid ol {
+            padding-left:33px;
+            border-right: 1px solid gray;
+            margin:0;
+            padding-top: 20px;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #article{
+            padding-left: 30px;
+            padding-right: 30px;
         }
     </style>
 </head>
 
 <body>
     <h1><a href="index.html">WEB1</a></h1>
-    <ol><h3>목차</h3>
-        <li><a href="1.html" class="saw">HTML</a></li>
-        <li><a href="2.html" class="saw" id="active">CSS</a></li>
-        <li><a href="3.html">JavaScript</a></li>
-    </ol>
 
-    <!--
-    <h1><a href="index.html"><font color = "red">WEB</font></a></h1>
-    <ol><h3>목차</h3>
-        <li><a href="1.html"><font color = "red">HTML</font></a></li>
-        <li><a href="2.html"><font color = "red">CSS</font></a></li>
-        <li><a href="3.html"><font color = "red">JavaScript</font></a></li>
-    </ol>
-    -->
+    <div id="grid">
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ol>
+        <div id="article">
+            <h2>CSS</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
 
-    <h2>CSS</h2>
-    <h3>Introduction</h3>
-    <p>
-        안뇽 dkssud
-    </p>
+
 
     <p>
             <div id="disqus_thread"></div>
