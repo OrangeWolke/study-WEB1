@@ -10,8 +10,7 @@ a {
 h1 {
     font-size: 300%;
     text-align: center;
-    text-shadow: 5px -5px #ffecfd;
-        margin: 0;
+    margin: 0;
     border-bottom: 1px solid gray;
     padding: 20px;
 }
